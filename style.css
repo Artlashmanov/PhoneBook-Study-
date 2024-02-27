@@ -1,0 +1,104 @@
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+  }
+  body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  align-items: center;
+  }
+  #Form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  }
+  #Form.show {
+  visibility: visible;
+  opacity: 1;
+  }
+  #Add, #Close {
+  color: #919c6c;
+  background: #15d23b;
+  font-size: 20px;
+  padding: 5px 10px;
+  font-weight: 700;
+  }
+  #Close {
+  position: solute;
+  top: 0; right: 0;
+  }
+  input[type=button], input[type=submit], #Add, #Close {
+  cursor: pointer;
+  }
+  #Form form {
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  border: 1px solid #000;
+  background: #f5f5f5;
+  }
+  #Form label, #Form input {
+  display: block;
+  width: 100%;
+  }
+  #Form label {
+  margin: 10px 0;
+  }
+  #Form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  }
+  #Form input[type=submit] {
+  margin-top: 20px;
+  border: 0;
+  color: #fff;
+  background: #780000;
+  }
+  #Wrap {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1000px;
+  }
+  #Head {
+  display: flex;
+  align-items: center;
+  }
+  #Head h2 {
+  flex-grow: 3;
+  position: relative;
+
+  }
+  #List .row {
+  display: flex;
+  margin: 10px 0;
+  border: 1px solid #5c14ec;
+  background: #ededed;
+  }
+  #List .info {
+  padding: 10px;
+  flex-grow: 1;
+  line-height: 28px;
+  }
+  i.tag {
+  color: #326abd;
+  font-size: 18px;
+  margin-right: 5px;
+  }
+  .row input[type=button] {
+  font-size: 30px;
+  padding: 0 10px;
+  border: 0;
+  background: 0;
+  }

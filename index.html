@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Phone book by Lashmanov">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+<title>Телефонная книга</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="Form">
+<form onsubmit="return telefoneBook.save()">
+<div id="Close" class="material-icons" onclick="telefoneBook.toggle(false)">
+Закрыть
+</div>
+<input type="hidden" id="ID"/>
+<label>Имя <br>
+<input type="text" id="Name" required/>
+</label>
+<label>Фамилия <br>
+<input type="text" id="Lastname"/>
+</label>
+<label>Отчество <br>
+<input type="text" id="Surname"/>
+</label>
+<label>Телефон <br>
+<input type="text" id="Tel"/>
+</label>
+<input type="submit" value="Сохранить" id="Go"/>
+</form></div>
+
+<div id="Wrap">
+<div id="Head">
+<h2>«Телефонный справочник»</h2>
+<div id="Add" class="material-icons" onclick="telefoneBook.toggle(true)">
+Добавить +
+</div>
+</div>
+<div id="List"></div>
+</div>
+<script src="index.js"></script>
+  </body>
+</html>
